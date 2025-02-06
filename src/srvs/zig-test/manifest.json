@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.component.v1",
+  "id": "hello-world",
+  "type": "exe",
+  "description": "Greets the world",
+  "enableIf": {
+    "sys": [
+      "skift"
+    ]
+  },
+  "requires": [
+    "grund-base",
+    "karm-rpc",
+    "karm-sys"
+  ]
+}

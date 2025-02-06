@@ -26,6 +26,7 @@ Async::Task<> entryPointAsync(Sys::Context &ctx) {
     co_try$(system->prepareService("grund-net"s));
     co_try$(system->prepareService("grund-seat"s));
     co_try$(system->prepareService("grund-shell"s));
+    co_try$(system->prepareService("hello-world"s));
 
     for (auto &endpoint : system->_endpoints)
         co_try$(endpoint->activate(ctx));

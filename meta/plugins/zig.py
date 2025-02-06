@@ -6,7 +6,7 @@ append(
         "zig",
         ["*.zig"],
         "*.o.o",
-        "build-obj $flags -femit-bin=$out $in",
+        "build-obj $cincs $cdefs $flags -femit-bin=$out $in",
         [
             "-fPIE",
             "-fno-stack-check",
